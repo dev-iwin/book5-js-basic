@@ -25,5 +25,14 @@
 		</ul>
 		<div id="showResult"></div>	
 	</div>	
+	<script>
+		function showPrice() {
+			var originPrice = document.querySelector("#oPrice").value;
+			var rate = document.querySelector("#rate").value;
+			var savedPrice = originPrice * (rate/100);
+			var resultPrice = originPrice - savedPrice;
+			document.querySelector("#showResult").innerHTML = resultPrice + "원 입니다."
+		}
+	</script>
 </body>
 </html>

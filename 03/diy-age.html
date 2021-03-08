@@ -9,6 +9,18 @@
 </head>
 <body>	
 	<button class="btn" onclick="calc()">나이 계산하기</button>
-	<div id="result" class="show">(결과 값 표시)</div> 
+	<div id="result" class="show">(결과 값 표시)</div>
+	<script>
+		function calc() {
+			var birth = prompt("Your birth", "YYYY");
+			var year = prompt("This year", "YYYY");
+			var age;
+			age = year - birth + 1;
+			// document.write("You are " + age + "-year-old.");
+			// document.querySelector("#result").innerHTML = "You are " + age + "-year-old.";
+			/*document.querySelector("#result").innerHTML = */alert("You are " + age + "-year-old.")
+			// 이걸 써서 해도 되긴 되더라.
+		}
+	</script>
 </body>
 </html>
