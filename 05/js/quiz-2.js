@@ -6,7 +6,7 @@ function compareNum(a, b) {
         alert(a + "와/과 " + b + "은/는 같습니다.");
     }
     else {
-        alert(b + "이/가 " + a + "보다 큽니다.");
+        alert(b + "24l이/가 " + a + "보다 큽니다.");
     }
 };
 
