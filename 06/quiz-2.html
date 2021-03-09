@@ -11,7 +11,19 @@
 <body>
 	<script>
 		var r = prompt("원의 반지름은? (cm)");
-	
+		var circle1 = new Circle(r);
+		document.write("<center>반지름이 "+ circle1.radius +"cm일 때</center><br>");
+		document.write("<center>원 둘레 : 약 "+ circle1.circumference() +"cm</center><br>");	
+		document.write("<center>원 넓이 : 약 "+ circle1.circleArea() +"cm<sup>2</sup></center><br>");	
+		function Circle(radius) {
+			this.radius = radius;
+			this.circumference = function() {
+				return Math.floor(2 * Math.PI * this.radius);
+			};
+			this.circleArea = function() {
+				return Math.floor(Math.PI * this.radius * this.radius);
+			};
+		}
 	</script>
 </body>
 </html>
