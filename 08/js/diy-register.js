@@ -17,7 +17,7 @@ function newRegister() {
 
     // 명단에 넣은 후 x버튼의 기능을 넣어야 하나??
     var delBttns = document.querySelectorAll(".del");
-    for(var i = 0; i = delBttns.length; i++) {
+    for(var i = 0; i < delBttns.length; i++) {
         delBttns[i].addEventListener("click", function() {
             if(this.parentNode.parentNode) {
                 this.parentNode.parentNode.removeChild(this.parentNode);
@@ -25,3 +25,4 @@ function newRegister() {
         });
     }
 }
+
